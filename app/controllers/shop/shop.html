@@ -1,0 +1,17 @@
+<h2 style="padding-bottom: 10px">Shop our featured collection</h2>
+<div class="row">
+    <div class="column" ng-repeat="product in vm.products.products">
+        <div class="card">
+            <div class="container">
+                <div>
+                    <img ng-src="{{product.filename}}">
+                    <div align="center" id="productDetails">
+                        <p>{{product.name}}</p>
+                        <p class="latoMedium">$ {{product.price}}</p>
+                        <button ng-click="vm.addItem(product)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

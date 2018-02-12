@@ -1,0 +1,34 @@
+<md-dialog id='cartDialogBox'>
+    <form ng-cloak>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <h2>Your Cart</h2>
+                <span flex></span>
+                <div ng-repeat="item in vm.cartitems" ng-if="vm.cartitems.length>0" layout="row">
+                    <div layout="column">
+                        <img id="cartImage" ng-src="{{item.filename}}">
+                    </div>
+                    <div layout="column">
+                        <p style="text-align: right">{{item.name}}</p>
+                        <p style="text-align: right">$ {{item.price}}</p>
+                        <button ng-click="vm.remove(item)">remove</button>
+                    </div>
+                </div>
+                <div ng-if="vm.cartitems.length==0">
+                    <p><b>Nothing in your Cart,Start Shopping</b></p>
+                </div>
+                <hr>
+                <div layout="column" align="center">
+                    <div layout="column" style="padding-right: 30px" >
+                        <b style="font-size: medium">Total: $ {{vm.total}}</b>
+                    </div>
+                </div>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="column" align="center">
+            <md-button ng-click="vm.cancel()" >
+                Back
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

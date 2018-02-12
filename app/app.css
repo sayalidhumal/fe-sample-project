@@ -1,0 +1,97 @@
+.topNav{
+  background-color: #001fc8;
+  height: 2cm;
+  color: white;
+}
+
+button{
+  width: 3cm;
+}
+
+.topNav input{
+  color: black;
+  width: 30px;
+}
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.headerButton {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  min-width: 200px;
+  border:2px solid lightgray;
+}
+
+.card:hover{
+  border:2px solid blue;
+}
+
+.column {
+  padding: 0 20px;
+  padding-left: 20px;
+  float: left;
+  width: 20%;
+  min-width: 400px;
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 100%;
+  min-width: 200px;
+}
+
+@media (min-width: 400px){
+  .container {
+    width: 400px !important;
+  }
+}
+
+#productDetails{
+  padding: 10px 0px 10px 0px;
+}
+
+#cartbutton{
+  align: right;
+}
+
+hr{
+  color: black;
+}
+
+#cartDialogBox{
+  background: rgba(255, 255, 255,0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#cartImage{
+  width: 80%;
+  height: 80%;
+  border: 2px solid grey;
+}
+
+html{
+  font-family: "Lato Medium";
+}
+
+.latoMedium{
+  font-weight: 700;
+}
+
+

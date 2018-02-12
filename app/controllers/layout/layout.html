@@ -1,0 +1,16 @@
+
+    <md-toolbar class="topNav">
+        <div class="md-toolbar-tools">
+            <i class="material-icons">shopping_cart</i>
+            <h1><b>Cart.ly</b></h1>
+            <button ng-class="{'active' : vm.shopcheck}" class="headerButton" ng-click="vm.popup($event,false)">Shop</button>
+            <span flex></span>
+            <div id="cartButton">
+                <button ng-class="{'active' : vm.cartcheck}" class="headerButton" ng-click="vm.popup($event,true)">Your Cart</button>
+                <input disabled value="{{vm.cartItemsCount}}">
+            </div>
+        </div>
+    </md-toolbar>
+    <md-content>
+        <div ui-view="content"></div>
+    </md-content>
